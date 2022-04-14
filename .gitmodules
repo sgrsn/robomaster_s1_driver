@@ -1,0 +1,3 @@
+[submodule "nodes/rm_py_hack"]
+	path = nodes/rm_py_hack
+	url = git@github.com:sgrsn/robomaster-python-hack.git
