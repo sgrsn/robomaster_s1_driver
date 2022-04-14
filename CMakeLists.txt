@@ -10,6 +10,6 @@ catkin_python_setup()
 catkin_package()
 
 catkin_install_python(PROGRAMS
-  nodes/robomaster_node.py
+  nodes/robomaster_node
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

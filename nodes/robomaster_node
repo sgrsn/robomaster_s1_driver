@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+
+from robomaster_s1_driver.robomaster_node import main
+main()
