@@ -15,10 +15,12 @@ class robomaster():
 
     def can_loop(self):
         start_time = time.time()
-        send_interval = 0.01
+        send_interval = 0.001
+        self.hacker.boot_robomaster()
         while True:
             self.hacker.receive_msg()
             if time.time() - start_time > send_interval:
+                self.hacker.control_led(200, 20, 100)
                 self.hacker.send_touch_command()
                 self.hacker.twist_robomaster(self.vx, self.vy, self.rz)                
                 start_time = time.time()
